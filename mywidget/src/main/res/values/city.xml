@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">내 계산기</string>
+    <string name="btnMulti">곱셈</string>
+    <string name="btnDevide">나눗셈</string>
+    <string name="btnMinus">뺄셈</string>
+    <string name="btnPlus">덧셈</string>
+    <string name = "c1">대구</string>
+</resources>

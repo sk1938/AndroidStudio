@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mypet</string>
+
+    <string name="dog_name">강아지</string>
+    <string name="cat_name">고양이</string>
+    <string name="rabbit_name">토끼</string>
+</resources>

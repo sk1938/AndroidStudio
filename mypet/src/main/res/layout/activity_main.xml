@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <CheckBox
+        android:id="@+id/chkAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBox" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/Rgroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/RdoDog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dog_name"/>
+
+        <RadioButton
+            android:id="@+id/RdoCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_name" />
+
+        <RadioButton
+            android:id="@+id/RdoRabbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rabbit_name" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/ImgPet"
+        android:layout_width="193dp"
+        android:layout_height="281dp"
+        app:srcCompat="@drawable/dog" />
+
+    <Button
+        android:id="@+id/BtnOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>
