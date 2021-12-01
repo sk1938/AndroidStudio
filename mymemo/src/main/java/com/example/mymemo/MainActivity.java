@@ -4,20 +4,28 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.text.InputFilter;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText txtResult;
-    Button btnSel, btnInsert;
-
+    Button btnSel, btnIns;
+    ListView lv;
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -31,35 +39,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txtResult = findViewById(R.id.txtResult);
+        btnIns = findViewById(R.id.btnIns);
         btnSel = findViewById(R.id.btnSel);
-
-        btnInsert = findViewById(R.id.btnInsert);
-        btnInsert.setOnClickListener(v->{
-            Intent intent = new Intent(getApplicationContext(), InsertActivity.class);
-            startActivity(intent);
+        lv = findViewById(R.id.lv);
+        //메모
+        String[] data = new String[]{""};
+        List<Map<String, String>> list = new ArrayList<>();
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("name", "홍길동"); map.put("addr", "대구");
+        list.add(map);
+        map = new HashMap<String, String>();
+        map.put("name", "홍길동"); map.put("addr", "대구");
+        list.add(map);
+        map = new HashMap<String, String>();
+        map.put("name", "홍길동"); map.put("addr", "대구");
+        list.add(map);
+        SimpleAdapter adapter = new SimpleAdapter(getApplicationContext(),
+                list,
+                android.R.layout.simple_list_item_2,
+                new String[]{"name", "addr"},
+                new int[]{android.R.id.text1,android.R.id.text2});
+        lv.setAdapter(adapter);
+        lv.setOnItemClickListener((adapterView, view, i, l) -> {
+            Toast.makeText(getApplicationContext(), list.get(i).get("name"), Toast.LENGTH_LONG).show();
         });
+        btnSel.setOnClickListener(v ->{
 
-        DatabaseHelper dbHelper = new DatabaseHelper(getApplicationContext()); //DB, TAB
-
-
-        btnSel.setOnClickListener(v -> {
-
-            ArrayList<String> list = new ArrayList<String>();
-            SQLiteDatabase db = dbHelper.getReadableDatabase();
-
-            String sql = "select * from emp";
-
-            Cursor cursor = db.rawQuery(sql, null);
-
-            while (cursor.moveToNext()) {
-                list.add(cursor.getString(0));
-                list.add(cursor.getString(1));
-                list.add(cursor.getString(2));
-                list.add(cursor.getString(3));
-            }
-            txtResult.setText(list.toString());
-            db.close();
         });
     }
 }
