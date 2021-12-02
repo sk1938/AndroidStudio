@@ -6,8 +6,15 @@
         <entry key="..\:/dev/AndroidspaceWork/git/app/src/main/res/layout/activity_main.xml" value="0.3453125" />
         <entry key="..\:/dev/AndroidspaceWork/git/myactivity/src/main/res/layout/activity_life.xml" value="0.3451086956521739" />
         <entry key="..\:/dev/AndroidspaceWork/git/myactivity/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/dev/AndroidspaceWork/git/mydialog/src/main/res/layout/activity_login.xml" value="0.1793478260869565" />
+        <entry key="..\:/dev/AndroidspaceWork/git/mydialog/src/main/res/layout/activity_main.xml" value="0.17426545086119555" />
+        <entry key="..\:/dev/AndroidspaceWork/git/mydiary/src/main/res/layout/activity_main.xml" value="0.17426545086119555" />
+        <entry key="..\:/dev/AndroidspaceWork/git/mydiary/src/main/res/layout/activity_write.xml" value="0.36614583333333334" />
+        <entry key="..\:/dev/AndroidspaceWork/git/mydiary/src/main/res/layout/listview_item.xml" value="0.17426545086119555" />
         <entry key="..\:/dev/AndroidspaceWork/git/myhttp/src/main/res/layout/activity_main.xml" value="0.25625" />
         <entry key="..\:/dev/AndroidspaceWork/git/mylayout/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/dev/AndroidspaceWork/git/mylayout/src/main/res/layout/activity_view.xml" value="0.17426545086119555" />
+        <entry key="..\:/dev/AndroidspaceWork/git/mylayout/src/main/res/layout/activity_write.xml" value="0.17426545086119555" />
         <entry key="..\:/dev/AndroidspaceWork/git/mylist/src/main/res/layout/activity_main.xml" value="0.25625" />
         <entry key="..\:/dev/AndroidspaceWork/git/mylist/src/main/res/layout/activity_recycle.xml" value="0.1802536231884058" />
         <entry key="..\:/dev/AndroidspaceWork/git/mylist/src/main/res/layout/list_item.xml" value="0.2520833333333333" />
@@ -20,6 +27,7 @@
         <entry key="..\:/dev/AndroidspaceWork/git/mypet/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/dev/AndroidspaceWork/git/mywidget/src/main/res/layout/active_cal.xml" value="0.25" />
         <entry key="..\:/dev/AndroidspaceWork/git/mywidget/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/dev/AndroidspaceWork/git/mywriteread/src/main/res/layout/activity_main.xml" value="0.1648148148148148" />
       </map>
     </option>
   </component>
