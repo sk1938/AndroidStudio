@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         btnWriteForm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MediaStore.)
+                Intent intent = new Intent(getApplicationContext(), WriteActivity.class);
+                startActivity(intent);
             }
         });
     }
